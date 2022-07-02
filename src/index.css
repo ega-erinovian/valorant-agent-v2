@@ -1,13 +1,122 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /* Color Scheme */
+  --valo-dark: #0e1821;
+  --valo-red: #ff4655;
+  --valo-dark-red: #cf3f4b;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url("../public/assets/img/bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  overflow: visible;
+}
+
+/* Navbar */
+.navbar {
+  z-index: 100;
+}
+.nav-button {
+  background-color: var(--valo-red) !important;
+  border: none !important;
+  transition: ease-in 0.2s !important;
+  -webkit-transition: ease-in 0.2s !important;
+  -moz-transition: ease-in 0.2s !important;
+  -ms-transition: ease-in 0.2s !important;
+  -o-transition: ease-in 0.2s !important;
+}
+.nav-button:hover {
+  background-color: var(--valo-dark-red) !important;
+}
+
+/* Header */
+.header-section {
+  height: 100vh;
+  width: 100%;
+}
+
+.header-content {
+  height: 78%;
+  background-image: url("../public/assets/img/bg-header.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.header-section .img-container {
+  height: 88%;
+  top: 100px;
+  position: absolute;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000073;
+  min-width: 100%;
+  height: 90%;
+  z-index: -1;
+}
+
+/* Select Agent */
+.select-agent-cont .agent-icon {
+  width: 200px;
+  height: 200px;
+  border: solid 4px #999;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  background-color: #fff;
+}
+
+.select-agent-cont .agent-icon:hover {
+  border: solid 5px var(--valo-red);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+/* Agents Components */
+.agents-header-section {
+  height: 100vh;
+  width: 100%;
+}
+
+.agents-header-section .img-container {
+  height: 88%;
+  top: 100px;
+  left: 0;
+  position: absolute;
+}
+
+#myVideo {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  z-index: -1;
+}
+
+.agent-description-section {
+  height: 90%;
+  width: 27%;
+}
+
+.agent-description-section h1 {
+  font-size: 3rem;
 }
