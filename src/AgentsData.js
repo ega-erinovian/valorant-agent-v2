@@ -7,30 +7,29 @@ export const agentsData = [
     skills: [
       {
         id: 1,
-        skillName: "Astral Form",
-        skillDesc: "ACTIVATE to enter Astral Form where you can place Stars with PRIMARY FIRE. Stars can be reactivated later, transforming them into a Nova Pulse, Nebula, or Gravity Well.",
+        skillName: "Gravity Well",
+        skillDesc: "Place Stars in Astral Form. ACTIVATE a Star to form a Gravity Well. Players in the area are pulled toward the center before it explodes, making all players still trapped inside vulnerable.",
+        skillVid: "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltaba20d81cc601af4/6036c92599494e6c4f166b19/RIFT21_Astra_Ability_C.mp4",
       },
       {
         id: 2,
-        skillName: "Gravity Well",
-        skillDesc: "Place Stars in Astral Form. ACTIVATE a Star to form a Gravity Well. Players in the area are pulled toward the center before it explodes, making all players still trapped inside vulnerable.",
+        skillName: "Nova Pulse",
+        skillDesc: "Place Stars in Astral Form. ACTIVATE a Star to detonate a Nova Pulse. The Nova Pulse charges briefly then strikes, concussing all players in its area.",
+        skillVid: "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt78e556d97ea93fc9/6036c92572c04c12c9563dff/RIFT21_Astra_Ability_Q.mp4",
       },
       {
         id: 3,
-        skillName: "Nova Pulse",
-        skillDesc: "Place Stars in Astral Form. ACTIVATE a Star to detonate a Nova Pulse. The Nova Pulse charges briefly then strikes, concussing all players in its area.",
+        skillName: "Nebula - Dissipate",
+        skillDesc:
+          "Place Stars in Astral Form. ACTIVATE a Star to transform it into a Nebula (smoke). USE a Star to Dissipate it, returning the Star to be placed in a new location after a delay. Dissipate briefly forms a fake Nebula at the Star`s location before returning.",
+        skillVid: "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3be9010588cba144/6036c924427f5d75042c3ae5/RIFT21_Astra_Ability_E_F.mp4",
       },
       {
         id: 4,
-        skillName: "Nebula / Dissipate",
-        skillDesc:
-          "Place Stars in Astral Form. ACTIVATE a Star to transform it into a Nebula (smoke). USE a Star to Dissipate it, returning the Star to be placed in a new location after a delay. Dissipate briefly forms a fake Nebula at the Star`s location before returning.",
-      },
-      {
-        id: 5,
         skillName: "Cosmic Divide",
         skillDesc:
           "When Cosmic Divide is charged, use SECONDARY FIRE in Astral Form to begin aiming it, then PRIMARY FIRE to select two locations. An infinite Cosmic Divide connects the two points you select. Cosmic Divide blocks bullets and heavily dampens audio.",
+        skillVid: "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltca94f8d6f8e4c91d/6036c92499494e6c4f166b15/RIFT21_Astra_Ability_ULT.mp4",
       },
     ],
   },
@@ -44,21 +43,25 @@ export const agentsData = [
         id: 1,
         skillName: "Aftershock",
         skillDesc: "EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.",
+        skillVid: "",
       },
       {
         id: 2,
         skillName: "Flashpoint",
         skillDesc: "EQUIP a blinding charge. FIRE the charge to set a fast-acting burst through the wall. The charge detonates to blind all players looking at it.",
+        skillVid: "",
       },
       {
         id: 3,
         skillName: "Fault Line",
         skillDesc: "EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, dazing all players in its zone and in a line up to the zone.",
+        skillVid: "",
       },
       {
         id: 4,
         skillName: "Rolling Thunder",
         skillDesc: "EQUIP a seismic charge. FIRE to send a cascading quake through all terrain in a large line. The quake dazes and knocks up anyone caught in it.",
+        skillVid: "",
       },
     ],
   },
@@ -212,7 +215,7 @@ export const agentsData = [
   },
   {
     id: 8,
-    agentName: "KAY/O",
+    agentName: "KAYO",
     bio: "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to suppress enemy abilities cripples his opponents' capacity to fight back, securing him and his allies the ultimate edge.",
     role: "Initiator",
     skills: [

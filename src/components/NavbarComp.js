@@ -4,7 +4,7 @@ import { Navbar, Container, Nav, Button } from "react-bootstrap";
 const NavbarComp = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg" className="navbar" fixed="top">
+      <Navbar variant="dark" expand="lg" className="navbar" fixed="top">
         <Container>
           <Navbar.Brand href="#home">
             <img alt="valorant-logo" src="../assets/img/logo.webp" width="30" height="30" className="d-inline-block align-top me-2" />

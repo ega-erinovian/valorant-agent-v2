@@ -4,8 +4,6 @@ import SelectAgentsComp from "./SelectAgentsComp";
 
 export default class HomeComp extends Component {
   render() {
-    // Get current URL
-    const currentURL = window.location.href.split("/");
     return (
       <div>
         <section className="header-section mt-5">

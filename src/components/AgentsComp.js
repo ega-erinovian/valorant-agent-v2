@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { agentsData } from "../AgentsData";
-import { AGENT_ART_URL, AGENT_VIDEO_URL } from "../utils/Const";
+import { AGENT_ART_URL, AGENT_VIDEO_URL, AGENT_VP_URL } from "../utils/Const";
 import { Container } from "react-bootstrap";
 import SelectAgentsComp from "./SelectAgentsComp";
 import AgentsDesc from "./AgentsDesc";
+import AgentSkill from "./AgentSkill";
 
 export default class AgentsComp extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class AgentsComp extends Component {
       agents: agentsData,
     };
   }
+
   render() {
     let { agents } = this.state;
     let currentURL = window.location.href.split("/");
@@ -22,7 +24,7 @@ export default class AgentsComp extends Component {
       })
       .indexOf(currentURL[4]);
     return (
-      <div>
+      <div className="agents-header-container">
         <video autoPlay muted loop id="myVideo">
           <source src={AGENT_VIDEO_URL + "agent-header-bg.mp4"} type="video/mp4" />
         </video>
@@ -32,7 +34,10 @@ export default class AgentsComp extends Component {
           <div className="img-container w-100 d-flex justify-content-center">
             <img src={AGENT_ART_URL + currentURL[4] + ".webp"} alt="header-char" />
           </div>
+          <img src="../assets/img/playerCard/Astra.webp" alt="agent-player-card" />
         </Container>
+        <AgentSkill agentName={agents[agentIndex].agentName} />
+        <SelectAgentsComp />
       </div>
     );
   }

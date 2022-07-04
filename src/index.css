@@ -11,6 +11,7 @@
   --valo-dark: #0e1821;
   --valo-red: #ff4655;
   --valo-dark-red: #cf3f4b;
+  --valo-white: #eeee;
 }
 
 a {
@@ -25,13 +26,18 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   overflow: visible;
 }
 
 /* Navbar */
 .navbar {
   z-index: 100;
+  background-color: var(--valo-dark) !important;
 }
 .nav-button {
   background-color: var(--valo-red) !important;
@@ -77,8 +83,8 @@ h1 {
 
 /* Select Agent */
 .select-agent-cont .agent-icon {
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   border: solid 4px #999;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
@@ -95,6 +101,10 @@ h1 {
 .agents-header-section {
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .agents-header-section .img-container {
@@ -102,6 +112,7 @@ h1 {
   top: 100px;
   left: 0;
   position: absolute;
+  z-index: -1;
 }
 
 #myVideo {
@@ -119,4 +130,42 @@ h1 {
 
 .agent-description-section h1 {
   font-size: 3rem;
+}
+
+.video-player {
+  overflow: hidden !important;
+}
+
+/* Agent Skill */
+.agent-skill-container {
+  border: 1px solid #555;
+  background-color: var(--valo-white);
+  box-shadow: -10px 0px 0px 0px var(--valo-red);
+}
+
+#agentSkill {
+  height: 100%;
+  width: 600px;
+  object-fit: cover;
+}
+
+.agent-skill-icon {
+  border: 1px solid #999;
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+  width: 85px;
+  height: 85px;
+  transition: all ease-in-out 0.1s;
+  -webkit-transition: all ease-in-out 0.1s;
+  -moz-transition: all ease-in-out 0.1s;
+  -ms-transition: all ease-in-out 0.1s;
+  -o-transition: all ease-in-out 0.1s;
+}
+
+.agent-skill-icon:hover {
+  border: 1px solid #000;
+  filter: brightness(1);
+  -webkit-filter: brightness(1);
+  background-color: var(--valo-red);
+  cursor: pointer;
 }

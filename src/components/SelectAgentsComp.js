@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { AGENT_ICON_URL } from "../utils/Const";
 import { agentsData } from "../AgentsData";
@@ -25,9 +24,9 @@ export default class SelectAgentsComp extends Component {
             {agents &&
               agents.map((agent) => (
                 <Col key={agent.id} md={2} className="mb-5">
-                  <Link to={"agents/" + agent.agentName}>
+                  <a href={"/agents/" + agent.agentName}>
                     <img src={AGENT_ICON_URL + agent.agentName + ".webp"} alt="agent-icon" className="agent-icon" />
-                  </Link>
+                  </a>
                 </Col>
               ))}
           </Row>
