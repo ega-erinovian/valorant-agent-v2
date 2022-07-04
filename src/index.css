@@ -136,6 +136,11 @@ h5 {
   overflow: hidden !important;
 }
 
+.agents-header-section .player-card {
+  margin-bottom: 3rem;
+  box-shadow: 30px 10px 0px 0px var(--valo-red);
+}
+
 /* Agent Skill */
 .agent-skill-container {
   border: 1px solid #555;
@@ -168,4 +173,10 @@ h5 {
   -webkit-filter: brightness(1);
   background-color: var(--valo-red);
   cursor: pointer;
+}
+
+.agent-skill-icon.skill-selected {
+  border: 1px solid #000;
+  filter: brightness(0);
+  -webkit-filter: brightness(0);
 }

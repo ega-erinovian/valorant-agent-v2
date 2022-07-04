@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { agentsData } from "../AgentsData";
-import { SKILL_ICON_URL } from "../utils/Const";
+import { SKILL_ICON_URL, AGENT_VIDEO_URL } from "../utils/Const";
+import VideoPlayer from "react-video-js-player";
 import ReactPlayer from "react-player";
 
 export default class AgentSkill extends Component {
@@ -13,9 +14,10 @@ export default class AgentSkill extends Component {
       agents: agentsData,
     };
   }
+
   render() {
     let { agentName } = this.props;
-    let { agents, index } = this.state;
+    let { agents, index} = this.state;
     let agentIndex = agents
       .map((agent) => {
         return agent.agentName;
@@ -30,8 +32,11 @@ export default class AgentSkill extends Component {
                 <Row>
                   {agents[agentIndex].skills &&
                     agents[agentIndex].skills.map((skill) => (
-                      <Col key={skill.id} md={2} className="mb-5">
-                        <img src={SKILL_ICON_URL + agents[agentIndex].agentName + "/" + skill.skillName + ".webp"} alt="skill-icon" className="agent-skill-icon p-3" />
+                      <Col key={(skill.id)} md={2} className="mb-5">
+                        <img src={SKILL_ICON_URL + agents[agentIndex].agentName + "/" + skill.skillName + ".webp"} alt="skill-icon" id="skillIcon" className="agent-skill-icon p-3" onClick={() => {
+                          this.setState({index: (skill.id-1), skillVid: agents[agentIndex].skills[index].skillVid})
+                          this.forceUpdate();
+                        }} />
                       </Col>
                     ))}
                 </Row>
@@ -43,9 +48,7 @@ export default class AgentSkill extends Component {
                 </div>
               </Col>
               <Col style={{ overflow: "hidden" }}>
-                <video autoPlay muted loop id="agentSkill">
-                  <source src={agents[agentIndex].skills[index].skillVid} type="video/mp4" />
-                </video>
+                <VideoPlayer src={agents[agentIndex].skills[index].skillVid} preload="auto" autoplay= 'muted' aspectRatio="16:9" loop={true} controls={false} width="600px" id="agentSkill"/>
               </Col>
             </Row>
           </div>
