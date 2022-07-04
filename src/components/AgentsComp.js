@@ -29,12 +29,14 @@ export default class AgentsComp extends Component {
           <source src={AGENT_VIDEO_URL + "agent-header-bg.mp4"} type="video/mp4" />
         </video>
         <div className="header-overlay"></div>
-        <Container className="agents-header-section mt-5">
+        <Container className="agents-header-section text-white">
           <div className="img-container w-100 d-flex justify-content-center">
             <img src={AGENT_ART_URL + currentURL[4] + ".webp"} alt="header-char" />
           </div>
           <AgentsDesc agentName={agents[agentIndex].agentName} agentBio={agents[agentIndex].bio} agentRole={agents[agentIndex].role} />
-          <img src="../assets/img/playerCard/Astra.webp" alt="agent-player-card" className="player-card" />
+          <div className="agent-number">
+            <h1><strong>{agents[agentIndex].id}</strong></h1>
+          </div>
         </Container>
         <AgentSkill agentName={agents[agentIndex].agentName} />
         <SelectAgentsComp />

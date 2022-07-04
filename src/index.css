@@ -30,7 +30,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+strong {
   overflow: visible;
 }
 
@@ -132,20 +133,35 @@ h5 {
   font-size: 3rem;
 }
 
+.agents-header-section .agent-number{
+  overflow: visible;
+}
+
+.agents-header-section .agent-number h3{
+  font-size: 2rem
+}
+
+.agents-header-section .agent-number h1{
+  font-size: 15rem
+}
+
 .video-player {
   overflow: hidden !important;
 }
 
-.agents-header-section .player-card {
-  margin-bottom: 3rem;
-  box-shadow: 30px 10px 0px 0px var(--valo-red);
+/* Agent Skill */
+.agent-skill .agent-skill-title{
+  font-size: 5rem;
+  margin-top: 10rem;
+  margin-bottom: -1.4rem;
+  margin-left: -10px;
 }
 
-/* Agent Skill */
 .agent-skill-container {
   border: 1px solid #555;
   background-color: var(--valo-white);
   box-shadow: -10px 0px 0px 0px var(--valo-red);
+  margin-bottom: 10rem;
 }
 
 #agentSkill {
@@ -156,8 +172,8 @@ h5 {
 
 .agent-skill-icon {
   border: 1px solid #999;
-  filter: brightness(0.6);
-  -webkit-filter: brightness(0.6);
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
   width: 85px;
   height: 85px;
   transition: all ease-in-out 0.1s;
@@ -176,7 +192,23 @@ h5 {
 }
 
 .agent-skill-icon.skill-selected {
-  border: 1px solid #000;
+  border: 2px solid #000;
   filter: brightness(0);
   -webkit-filter: brightness(0);
+}
+.agent-skill-icon.skill-selected:hover {
+  background-color: var(--valo-red);
+  filter: brightness(1);
+  -webkit-filter: brightness(1);
+  cursor: pointer;
+}
+
+.agent-skill-vid{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skill-description .badge:hover{
+  background-color: var(--valo-red) !important;
 }
