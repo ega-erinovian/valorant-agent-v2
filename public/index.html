@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
     <title>Valorant Agent</title>
   </head>
-  <body>
+  <body id="myScrollbar">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -40,5 +40,23 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+    <script>
+      window.addEventListener("scroll", () => {
+        let agentArt = document.getElementById("agentArt");
+        let value = window.scrollY;
+        console.log(value);
+        agentArt.style.top = value * 0.07 + "%";
+        
+        if (value >= 200) {
+          agentArt.style.top = value * 0.01 + "%";
+        }
+        if(value >= 250){
+          agentArt.style.top =value * -0.01 + "%";
+        }
+        if (value === 0) {
+          agentArt.style.top = 10 + "%";
+        }
+      })
+    </script>
   </body>
 </html>

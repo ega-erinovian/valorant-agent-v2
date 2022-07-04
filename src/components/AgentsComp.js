@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { agentsData } from "../AgentsData";
-import { AGENT_ART_URL, AGENT_VIDEO_URL, AGENT_VP_URL } from "../utils/Const";
+import { AGENT_ART_URL, AGENT_VIDEO_URL} from "../utils/Const";
 import { Container } from "react-bootstrap";
 import SelectAgentsComp from "./SelectAgentsComp";
 import AgentsDesc from "./AgentsDesc";
@@ -30,8 +30,8 @@ export default class AgentsComp extends Component {
         </video>
         <div className="header-overlay"></div>
         <Container className="agents-header-section text-white">
-          <div className="img-container w-100 d-flex justify-content-center">
-            <img src={AGENT_ART_URL + currentURL[4] + ".webp"} alt="header-char" />
+          <div className="img-container w-100 d-flex justify-content-center" id="agentArt">
+            <img src={AGENT_ART_URL + currentURL[4] + ".webp"} alt="header-char"  />
           </div>
           <AgentsDesc agentName={agents[agentIndex].agentName} agentBio={agents[agentIndex].bio} agentRole={agents[agentIndex].role} />
           <div className="agent-number">
