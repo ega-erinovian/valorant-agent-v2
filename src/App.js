@@ -19,4 +19,4 @@ function App() {
 
 export default App;
 
-// TODO: Update mobile responsiveness
+// TODO: Update mobile responsiveness - Footer

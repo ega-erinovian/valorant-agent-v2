@@ -9,7 +9,7 @@ export default class HomeComp extends Component {
         <section className="header-section mt-5">
           <div className="header-content"></div>
           <div className="img-container w-100 d-flex justify-content-center" id="agentArt">
-            <img src={AGENT_ART_URL + "All.webp"} alt="header-char" />
+            <img src={AGENT_ART_URL + "All.webp"} alt="header-char"/>
           </div>
         </section>
         <SelectAgentsComp />

@@ -23,7 +23,7 @@ export default class SelectAgentsComp extends Component {
           <Row>
             {agents &&
               agents.map((agent) => (
-                <Col key={agent.id} md={2} className="mb-5">
+                <Col key={agent.id} lg={1} md={3} xs={4} className="mb-3">
                   <a href={"/agents/" + agent.agentName}>
                     <img src={AGENT_ICON_URL + agent.agentName + ".webp"} alt="agent-icon" className="agent-icon" />
                   </a>

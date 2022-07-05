@@ -64,11 +64,11 @@ export default class AgentSkill extends Component {
           <h1 className="agent-skill-title"><strong>AGENT ABILITIES</strong></h1>
           <div className="agent-skill-container">
             <Row>
-              <Col className="p-5">
+              <Col className="p-5" lg={5}>
                 <Row>
                   {agents[agentIndex].skills &&
                     agents[agentIndex].skills.map((skill) => (
-                      <Col key={(skill.id)} md={2} sm={4} className="mb-5">
+                      <Col key={(skill.id)} className="mb-5" xs={3}>
                         <img src={SKILL_ICON_URL + agents[agentIndex].agentName + "/" + skill.skillName + ".webp"} alt="skill-icon" id="skillIcon" className="agent-skill-icon p-3" onClick={() => {
                           this.selectSkill((skill.id-1))
                           this.setState({index: skill.id-1})
