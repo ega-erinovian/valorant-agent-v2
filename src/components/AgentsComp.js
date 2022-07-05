@@ -33,8 +33,8 @@ export default class AgentsComp extends Component {
           <div className="img-container w-100 d-flex justify-content-center" id="agentArt">
             <img src={AGENT_ART_URL + currentURL[4] + ".webp"} alt="header-char"  />
           </div>
-          <AgentsDesc agentName={agents[agentIndex].agentName} agentBio={agents[agentIndex].bio} agentRole={agents[agentIndex].role} />
-          <div className="agent-number">
+          <AgentsDesc id="agentDesc" agentName={agents[agentIndex].agentName} agentBio={agents[agentIndex].bio} agentRole={agents[agentIndex].role} />
+          <div className="agent-number" id="agentNumber">
             <h1><strong>{agents[agentIndex].id}</strong></h1>
           </div>
         </Container>

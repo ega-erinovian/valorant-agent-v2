@@ -44,17 +44,13 @@
       window.addEventListener("scroll", () => {
         let agentArt = document.getElementById("agentArt");
         let value = window.scrollY;
-        console.log(value);
-        agentArt.style.top = value * 0.07 + "%";
         
-        if (value >= 200) {
-          agentArt.style.top = value * 0.01 + "%";
+        if(value < 200){
+          agentArt.style.top = 60 + "px";
         }
-        if(value >= 250){
-          agentArt.style.top =value * -0.01 + "%";
-        }
+        
         if (value === 0) {
-          agentArt.style.top = 10 + "%";
+          agentArt.style.top = 100 + "px";
         }
       })
     </script>
