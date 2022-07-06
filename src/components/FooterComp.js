@@ -13,7 +13,7 @@ const FooterComp = () => {
         <footer>
             <div className="footer-text text-white">
               <img src="../assets/img/riot-logo.webp" alt="riot-games-logo"/>
-              <h5>Made with dedication by egaerinovian</h5>
+              <h5>2022 || ega-erinovian</h5>
               <p>All the images and videos are property of Riot Games&trade;</p>
               <Row>
                 <Col>
