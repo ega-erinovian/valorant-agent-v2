@@ -11,8 +11,8 @@ function App() {
       <NavbarComp />
       <Routes>
         <Route path="/" element={<HomeComp />} exact />
-        <Route path="/agents/:agentName" element={<AgentsComp />} exact />
-        <Route path="/about" element={<AboutComp />} exact />
+        <Route path="agents/:agentName" element={<AgentsComp />} exact />
+        <Route path="about" element={<AboutComp />} exact />
       </Routes>
       <FooterComp/>
     </>
