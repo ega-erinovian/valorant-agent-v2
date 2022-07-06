@@ -35,7 +35,7 @@ strong {
   overflow: hidden;
 }
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
   overflow: hidden;
   z-index: 100;
@@ -54,7 +54,7 @@ strong {
   background-color: var(--valo-dark-red) !important;
 }
 
-/* Header */
+/* HEADER */
 .header-section {
   height: 100vh;
   width: 100%;
@@ -86,23 +86,7 @@ strong {
   height: 2.2vw;
 }
 
-/* Select Agent */
-.select-agent-cont .agent-icon {
-  width: 5vw;
-  height: 5vw;
-  border: solid 2px #999;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-  background-color: #fff;
-}
-
-.select-agent-cont .agent-icon:hover {
-  border: solid 2px var(--valo-red);
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0);
-}
-
-/* Agents Components */
+/* AGENTS COMPONENTS */
 .agents-header-section {
   height: 100vh;
   width: 100%;
@@ -158,7 +142,7 @@ strong {
   overflow: hidden !important;
 }
 
-/* Agent Skill */
+/* AGENT SKILL COMPONENT */
 .agent-skill .agent-skill-title{
   font-size: 5rem;
   margin-top: 10rem;
@@ -183,8 +167,8 @@ strong {
   border: 1px solid #999;
   filter: brightness(0.7);
   -webkit-filter: brightness(0.7);
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   transition: all ease-in-out 0.1s;
   -webkit-transition: all ease-in-out 0.1s;
   -moz-transition: all ease-in-out 0.1s;
@@ -226,6 +210,27 @@ strong {
   background-color: var(--valo-red) !important;
 }
 
+/* SELECT AGENT COMPONENT */
+.select-agent-cont h1{
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+.select-agent-cont .agent-icon {
+  width: 5vw;
+  height: 5vw;
+  border: solid 2px #999;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  background-color: #fff;
+}
+
+.select-agent-cont .agent-icon:hover {
+  border: solid 2px var(--valo-red);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
 /* Footer */
 footer{
   width: 100vw;
@@ -245,7 +250,7 @@ footer{
   width: 100vw;
   height: 50%;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.558);
+  background-color: #0e1821cd;
 }
 
 .footer-text .row{
@@ -287,6 +292,11 @@ footer .btn:hover{
   background-color: var(--valo-red);
 }
 
+/* About Component */
+.about-container{
+  margin: 10rem 0;
+}
+
 @media screen and (max-width: 1280px){
   /* Agent Header */
   .agent-header-text{
@@ -304,8 +314,8 @@ footer .btn:hover{
 
   /* Agent Skill */
   .agent-skill-icon {
-    width: 5vw;
-    height: 5vw;
+    width: 6vw;
+    height: 6vw;
   }
 
   /* Select Agent */

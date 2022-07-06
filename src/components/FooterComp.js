@@ -1,6 +1,12 @@
 import React from 'react'
-import { AGENT_VIDEO_URL } from "../utils/Const";
+
+// Import from bootstrap
 import { Row, Col } from "react-bootstrap";
+
+// Import constant url
+import { AGENT_VIDEO_URL } from "../utils/Const";
+
+// Import icon
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { SiNetlify, SiGithub } from "react-icons/si";
 
@@ -11,7 +17,6 @@ const FooterComp = () => {
             <video autoPlay muted loop id="myVideo">
               <source src={AGENT_VIDEO_URL + "valo-cinematic.mp4"} type="video/mp4" />
             </video>
-            <div className="footer-overlay"></div>
             <div className="footer-text text-white">
               <img src="../assets/img/riot-logo.webp" alt="riot-games-logo"/>
               <h5>Made with dedication by egaerinovian</h5>
