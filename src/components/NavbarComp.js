@@ -16,7 +16,7 @@ const NavbarComp = () => {
           <Navbar.Collapse className="justify-content-end">
             <Nav>
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link>Agents</Nav.Link>
+              <Nav.Link href="/">Agents</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
               <Button className="nav-button ms-2" size="sm">
                 <strong>Get it Now!</strong>

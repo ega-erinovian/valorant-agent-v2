@@ -58,8 +58,8 @@ export default class AgentsComp extends Component {
             </Col>
           </Row>
         </Container>
-        <AgentSkill agentName={agents[agentIndex].agentName} />
-        <SelectAgentsComp />
+        <AgentSkill agentName={agents[agentIndex].agentName}  />
+        <SelectAgentsComp agentIndex={agentIndex} />
       </div>
     );
   }

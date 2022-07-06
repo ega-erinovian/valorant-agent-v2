@@ -13,6 +13,27 @@
   --valo-white: #eeee;
 }
 
+::-webkit-scrollbar {
+  width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--valo-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  background: var(--valo-red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--valo-dark-red);
+}
+
 a {
   text-decoration: none;
 }
@@ -212,7 +233,7 @@ strong {
 
 /* SELECT AGENT COMPONENT */
 .select-agent-cont h1{
-  font-size: 5vw;
+  font-size: 6vw;
   text-transform: uppercase;
 }
 
@@ -223,6 +244,12 @@ strong {
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
   background-color: #fff;
+}
+
+.select-agent-cont .agent-selected {
+  border: solid 2px var(--valo-red);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 
 .select-agent-cont .agent-icon:hover {
@@ -250,18 +277,14 @@ footer{
   width: 100vw;
   height: 50%;
   position: absolute;
-  background-color: #0e1821cd;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url("../public/assets/img/footer-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer-text .row{
   width: 15%;
-}
-
-footer #myVideo {
-  object-fit: cover;
-  position: relative;
-  width: 100%;
-  height: 50vh;
 }
 
 footer h5{
@@ -405,6 +428,10 @@ footer .btn:hover{
     height: 19vw;
   }
 
+  .select-agent-cont h1{
+    font-size: 17vw;
+  }
+
   /* footer */
   .footer-text .row{
     width: 40%;
@@ -480,7 +507,7 @@ footer .btn:hover{
   }
 
   .footer-text .row{
-    width: 80%;
+    width: 75%;
   }
 
   footer img{

@@ -21,4 +21,4 @@ function App() {
 
 export default App;
 
-// TODO: Update mobile responsiveness - Footer
+// TODO: [v] Remove footer video, [v] Check media queries, [v] Scrollbar Styling, and [x] Upload to netlify

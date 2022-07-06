@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 
 // Import from bootstrap
-import { Container, Row, Col } from "react-bootstrap";
-
-// Import constant url
-import { AGENT_ICON_URL } from "../utils/Const";
+import { Container, Row} from "react-bootstrap";
 
 // Import agents data
 import { agentsData } from "../AgentsData";
+import AgentIcon from "./AgentIcon";
 
 export default class SelectAgentsComp extends Component {
   constructor(props) {
@@ -19,6 +17,7 @@ export default class SelectAgentsComp extends Component {
   }
 
   render() {
+    const { agentIndex } = this.props;
     const { agents } = this.state;
     return (
       <section className="select-agent-cont" id="agents">
@@ -28,16 +27,25 @@ export default class SelectAgentsComp extends Component {
           </h1>
           <Row>
             {agents &&
-              agents.map((agent) => (
-                <Col key={agent.id} lg={1} md={3} xs={4} className="mb-3">
-                  <a href={"/agents/" + agent.agentName}>
-                    <img src={AGENT_ICON_URL + agent.agentName + ".webp"} alt="agent-icon" className="agent-icon" />
-                  </a>
-                </Col>
-              ))}
+              agents.map((agent) => {
+                if(agentIndex-1){
+                  console.log(agent.id + "=" + agents[agentIndex].id);
+                  if(agent.id === (agents[agentIndex].id)){
+                    return(
+                      <AgentIcon agentId={ agent.id } agentName={ agent.agentName } classIcon="agent-selected"/>
+                      )}else{
+                    return(
+                      <AgentIcon agentId={ agent.id } agentName={ agent.agentName } classIcon=""/>
+                    )};
+                }else{
+                  return(
+                    <AgentIcon agentId={ agent.id } agentName={ agent.agentName } classIcon=""/>
+                  )};
+              })}
           </Row>
         </Container>
       </section>
     );
   }
 }
+
