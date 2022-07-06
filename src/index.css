@@ -47,6 +47,10 @@ body {
   background-attachment: fixed;
 }
 
+.img-container {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
