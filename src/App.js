@@ -20,5 +20,3 @@ function App() {
 }
 
 export default App;
-
-// TODO: [v] Remove footer video, [v] Check media queries, [v] Scrollbar Styling, and [x] Upload to netlify
