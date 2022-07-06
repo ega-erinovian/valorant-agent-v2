@@ -32,14 +32,14 @@ export default class SelectAgentsComp extends Component {
                   console.log(agent.id + "=" + agents[agentIndex].id);
                   if(agent.id === (agents[agentIndex].id)){
                     return(
-                      <AgentIcon agentId={ agent.id } agentName={ agent.agentName } classIcon="agent-selected"/>
+                      <AgentIcon key={agent.id} agentId={ agent.id } agentName={ agent.agentName } classIcon="agent-selected"/>
                       )}else{
                     return(
-                      <AgentIcon agentId={ agent.id } agentName={ agent.agentName } classIcon=""/>
+                      <AgentIcon key={agent.id} agentId={ agent.id } agentName={ agent.agentName } classIcon=""/>
                     )};
                 }else{
                   return(
-                    <AgentIcon agentId={ agent.id } agentName={ agent.agentName } classIcon=""/>
+                    <AgentIcon key={agent.id} agentId={ agent.id } agentName={ agent.agentName } classIcon=""/>
                   )};
               })}
           </Row>
