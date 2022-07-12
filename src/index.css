@@ -1,8 +1,11 @@
 * {
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 :root {
