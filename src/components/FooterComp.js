@@ -17,16 +17,16 @@ const FooterComp = () => {
               <p>All the images and videos are property of Riot Games&trade;</p>
               <Row>
                 <Col>
-                  <a href='https://www.instagram.com/egaerinovian/' target="_blank" rel="noreferrer" className="btn btn-light"><FaInstagram/></a>
+                  <a href='https://www.instagram.com/egaerinovian/' target="_blank" rel="noreferrer"><FaInstagram/></a>
                 </Col>
                 <Col>
-                  <a href='https://www.linkedin.com/in/ega-erinovian/' target="_blank" rel="noreferrer" className="btn btn-light"><FaLinkedinIn/></a>
+                  <a href='https://www.linkedin.com/in/ega-erinovian/' target="_blank" rel="noreferrer"><FaLinkedinIn/></a>
                 </Col>
                 <Col>
-                  <a href='https://app.netlify.com/teams/egaputra69/overview' target="_blank" rel="noreferrer" className="btn btn-light"><SiNetlify/></a>
+                  <a href='https://app.netlify.com/teams/egaputra69/overview' target="_blank" rel="noreferrer"><SiNetlify/></a>
                 </Col>
                 <Col>
-                  <a href='https://github.com/ega-erinovian' target="_blank" rel="noreferrer" className="btn btn-light"><SiGithub/></a>
+                  <a href='https://github.com/ega-erinovian' target="_blank" rel="noreferrer"><SiGithub/></a>
                 </Col>
               </Row>
             </div>

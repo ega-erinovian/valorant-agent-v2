@@ -305,23 +305,13 @@ footer img{
   margin-bottom: 4rem;
 }
 
-footer .btn{
-  border: none;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  transition: all ease-in-out .2s;
-  -webkit-transition: all ease-in-out .2s;
-  -moz-transition: all ease-in-out .2s;
-  -ms-transition: all ease-in-out .2s;
-  -o-transition: all ease-in-out .2s;
+footer a{
+  color: #fff;
+  font-size: 1.5rem;
 }
 
-footer .btn:hover{
-  color: #fff;
-  background-color: var(--valo-red);
+footer a:hover{
+  color: #cf3f4b;
 }
 
 /* About Component */
@@ -517,7 +507,7 @@ footer .btn:hover{
   }
 
   .footer-text .row{
-    width: 75%;
+    width: 70%;
   }
 
   footer img{
