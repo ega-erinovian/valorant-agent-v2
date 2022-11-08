@@ -6,7 +6,7 @@ import { ROLE_IMG_URL } from "../utils/Const";
 const AgentsDesc = ({ agentName, agentBio, agentRole }) => {
   return (
     <>
-      <section className="agent-description-section d-flex flex-column justify-content-center">
+      <section className="agent-description-section d-flex flex-column justify-content-center ms-lg-5 ms-sm-2">
         <p>|| Name</p>
         <h1 className="agent-name">
           <strong>{agentName}</strong>

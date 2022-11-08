@@ -51,7 +51,7 @@ body {
 }
 
 .img-container {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -123,7 +123,7 @@ strong {
 }
 
 #agentArt {
-  height: 88%;
+  height: 85%;
   width: 100%;
   top: 100px;
   left: 0;
@@ -147,7 +147,7 @@ strong {
 
 .agent-header-text{
   position: absolute;
-  width: 75vw;
+  width: 85vw;
   height: 100%;
   top: 0;
   display: flex;
@@ -247,25 +247,26 @@ strong {
 }
 
 .select-agent-cont .agent-icon {
-  width: 5vw;
-  height: 5vw;
-  border: solid 2px #999;
+  width: 5.5vw;
+  height: 5.5vw;
+  border: solid 2.5px #999;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
   background-color: #fff;
 }
 
-.select-agent-cont .agent-selected {
-  border: solid 2px var(--valo-red);
+.select-agent-cont .agent-icon:hover {
+  border: solid 2.5px var(--valo-red);
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
 }
 
-.select-agent-cont .agent-icon:hover {
-  border: solid 2px var(--valo-red);
+.select-agent-cont .agent-selected {
+  border: solid 2.5px var(--valo-red);
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
 }
+
 
 /* Footer */
 footer{
@@ -322,7 +323,7 @@ footer a:hover{
 @media screen and (max-width: 1280px){
   /* Agent Header */
   .agent-header-text{
-    width: 93.5vw;
+    width: 85vw;
   }
   .agent-description-section .agent-name{
     font-size: 2.8vw;
@@ -344,6 +345,13 @@ footer a:hover{
   .select-agent-cont .agent-icon {
     width: 6.5vw;
     height: 6.5vw;
+    padding: 0;
+  }
+
+  .select-agent-cont .agent-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   /* footer */
@@ -357,7 +365,7 @@ footer a:hover{
 }
 
 /* Media Queries - Tablets */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
   /* Agent Header */
   #agentArt img{
     position: relative;
@@ -392,23 +400,23 @@ footer a:hover{
     font-size: 13vw;
     text-transform: uppercase;
   }
-
+  
   .agent-role-wrapper .agent-role-text{
     font-size: 6vw;
   }
-
+  
   .agent-role-wrapper img{
     width: 5vw;
     height: 5vw;
     filter: brightness(0.1);
     -webkit-filter: brightness(0.1);
   }
-
+  
   /* Agent Skill */
   .agent-skill-title strong{
     font-size: 15vw;
   }
-
+  
   .agent-skill-icon {
     width: 15vw;
     height: 15vw;
@@ -421,34 +429,38 @@ footer a:hover{
   .skill-description p{
     font-size: 3vw;
   }
-
+  
   /* Select Agent */
   .select-agent-cont .agent-icon {
     width: 19vw;
     height: 19vw;
   }
-
+  
   .select-agent-cont h1{
     font-size: 17vw;
   }
-
+  
   /* footer */
   .footer-text .row{
     width: 40%;
   }
-
+  
   footer img{
     width: 40%;
   }
 }
 
 /* Media Queries - Smartphones */
-@media screen and (max-width: 640px){
+@media screen and (max-width: 500px){
   /* Agent Header */
+  #agentArt img{
+    object-fit: cover;
+  }
+
   .agent-header-text{
     width: 100vw;
   }
-
+  
   .agent-header-text .agent-number h1{
     font-size: 40vw;
   }
@@ -469,7 +481,8 @@ footer a:hover{
   /* Agent Skill */
   .agent-skill-title{
     font-size: 20vw !important;
-    margin-bottom: -5.1vw !important;
+    padding-bottom: 2rem;
+    line-height: 4rem;
   }
 
   .agent-skill-icon {
